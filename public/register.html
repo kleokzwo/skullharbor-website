@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Register // SkullHarbor</title><link rel="stylesheet" href="assets/style.css"></head>
+<body class="gate"><main class="gatewrap"><a class="brand" href="index.html">☠ SKULLHARBOR_</a><div class="gatecard"><div class="terminal-label">[ DOWNLOAD ACCESS GATE ]</div><h1>Create your account.</h1><p>Download access is released after email verification. A verified account receives a 7-day trial entitlement.</p>
+<form id="reg">
+<label>FIRST NAME<input type="text" name="first_name" required autocomplete="given-name" placeholder="Jane"></label>
+<label>LAST NAME<input type="text" name="last_name" required autocomplete="family-name" placeholder="Doe"></label>
+<label>POSITION / ROLE<input type="text" name="position" required autocomplete="organization-title" placeholder="IT Security Manager"></label>
+<label>WORK EMAIL<input type="email" name="email" required autocomplete="email" placeholder="jane.doe@company.tld"></label>
+<label>PASSWORD<input type="password" name="password" required minlength="10" autocomplete="new-password" placeholder="••••••••••"></label>
+<label class="check"><input type="checkbox" required><span>I will use SkullHarbor only on assets I am authorized to assess.</span></label>
+<button class="btn primary full" type="submit">REGISTER →</button>
+</form>
+<div id="demo" class="notice" hidden><b>SPRINT 1 FRONTEND</b><br>Registration UI is ready. Backend account creation, email verification, trial issuance and protected binary delivery are connected in the next implementation step.</div>
+<p class="micro">Already registered? Sign-in will be connected with the account backend.</p></div></main>
+<script>document.querySelector('#reg').addEventListener('submit',e=>{e.preventDefault();document.querySelector('#demo').hidden=false})</script></body></html>
