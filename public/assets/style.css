@@ -1280,3 +1280,25 @@ footer small {
 .purchase-status { max-width:760px; margin:0 auto; padding:120px 7vw; min-height:65vh; }
 .purchase-status h1 { margin:12px 0 18px; }
 .purchase-status .btn { margin-top:18px; }
+
+/* Digistore24-only CyberBasis sales page */
+.ds24-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(360px, .75fr);
+    gap: 7vw;
+    align-items: center;
+    min-height: calc(100vh - 72px)
+}
+.ds24-hero h1 { font-size: clamp(48px, 6.2vw, 94px); }
+.ds24-final .micro { color: inherit; opacity: .72; }
+@media(max-width:900px) {
+    .ds24-hero { grid-template-columns: 1fr; }
+}
+
+/* Legal pages only: compact section headings */
+.legal section h2 {
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin: 0 0 16px;
+}
